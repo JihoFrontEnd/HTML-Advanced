@@ -1,0 +1,14 @@
+<script>
+  function falseCallback() {
+    console.log('false');
+    return false;
+  }
+</script>
+
+<form action="/001/isSuccess.html" onsubmit="return true;">
+  <input type="submit" value="TRUE" />
+</form>
+
+<form action="/001/isSuccess.html" onsubmit="return falseCallback();">
+  <input type="submit" value="FALSE" />
+</form>
